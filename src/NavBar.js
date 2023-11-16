@@ -20,6 +20,7 @@ function NavBar() {
 					<Link to="/2020">2020</Link>
 					<Link to="/2019">2019</Link>
 					<Link to="/2018">2018</Link>
+                    {/* fix this */}
                     <DarkModeToggle />
             	</div>
         	</nav>
