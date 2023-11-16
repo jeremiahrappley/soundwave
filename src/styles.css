@@ -1,0 +1,114 @@
+.app {
+  text-align: center;
+  background-color: #1F1F1F;
+  color: #BFBFBF;
+}
+
+.header {
+  color: #BFBFBF;
+  background-color: #4D4D4D;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.footer {
+  color: #BFBFBF;
+  background-color: #1F1F1F;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 0.5vmin);
+}
+
+.top-links {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  font-size: 16px;
+  padding: 0;
+  z-index: 900;
+  width: 100%;
+  color: white;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  line-height: 0.8 !important;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+	padding: 15px 15px;
+}
+
+.nav>.nav-header {
+  display: inline;
+  margin-right: auto;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #BFBFBF;
+  padding: 13px 10px 13px 10px;
+}
+
+.nav>.nav-header>.nav-title>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none !important;
+  color: #BFBFBF;
+  border: none;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.nav>.nav-links>a.active {
+  color: #4D4D4D;
+}
+
+.nav>.nav-header>.nav-title>a:hover {
+  color: #4D4D4D;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  z-index: 970;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none !important;
+  color: #BFBFBF;
+  border: none;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.nav>.nav-links>a:hover {
+  color: #4D4D4D;
+}
+
+.nav>#nav-check {
+  display: none;
+}
