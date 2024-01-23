@@ -3,7 +3,7 @@ import './styles.css';
 
 function Playlist({ title, embedUrl }) {
 	return (
-		<div style={{ marginTop: '80px', marginLeft: '80px', marginRight: '80px'}}>
+		<div style={{ marginTop: '80px', marginLeft: '20px', marginRight: '20px'}}>
     		<h2>{title}</h2>
     		<iframe
 				title={title}
