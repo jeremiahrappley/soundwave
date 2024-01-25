@@ -1,6 +1,7 @@
 import './styles.css';
 import Navbar from './NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Playlists2024 from './2024';
 import Playlists2023 from './2023';
 import Playlists2022 from './2022';
 import Playlists2021 from './2021';
@@ -14,6 +15,7 @@ function App() {
 		<Router>
 		    <Navbar />
 			<Routes>
+				<Route path="/2024" element={<Playlists2024 />} />
  				<Route path="/2023" element={<Playlists2023 />} />
 				<Route path="/2022" element={<Playlists2022 />} />
 				<Route path="/2021" element={<Playlists2021 />} />
