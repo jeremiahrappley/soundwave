@@ -13,6 +13,7 @@ function NavBar() {
 					</div>
 				</div>
             	<div className='nav-links'>
+					<Link to="/2024">2024</Link>
 					<Link to="/2023">2023</Link>
     				<Link to="/2022">2022</Link>
     				<Link to="/2021">2021</Link>
