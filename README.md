@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Welcome to Soundwave
+
+This project is a web app that displays playlists of my favorite music from each month since 2018. The playlists are embedded from Apple Music, allowing viewers to preview and stream songs in their browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
