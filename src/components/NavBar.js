@@ -1,7 +1,7 @@
 // create an example NavBar component
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css';
+import '../styles.css';
 
 function NavBar() {
     return (

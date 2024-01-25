@@ -1,7 +1,7 @@
 import './styles.css';
-import Header from './Header';
-import Playlist from './Playlist';
-import Footer from './Footer';
+import Header from './components/Header';
+import Playlist from './components/Playlist';
+import Footer from './components/Footer';
 
 function Playlists2022() {
 	return (

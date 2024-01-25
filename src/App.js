@@ -1,5 +1,5 @@
 import './styles.css';
-import Navbar from './NavBar';
+import Navbar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Playlists2024 from './2024';
 import Playlists2023 from './2023';
