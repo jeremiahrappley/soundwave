@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Soundwave</title>
+    <!--
+      GitHub Pages has no server-side rewrites, so a direct hit or refresh on
+      a client-side route (e.g. /soundwave/2024) 404s. This encodes the real
+      path into a query string and redirects to the SPA root; the inline
+      script in index.html decodes it and restores the URL via history API.
+      Pattern: https://github.com/rafgraph/spa-github-pages
+    -->
+    <script type="text/javascript">
+      var segmentsToKeep = 1; // keep the "/soundwave" base path segment
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname
+            .split('/')
+            .slice(0, 1 + segmentsToKeep)
+            .join('/') +
+          '/?/' +
+          l.pathname
+            .split('/')
+            .slice(1 + segmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash,
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
