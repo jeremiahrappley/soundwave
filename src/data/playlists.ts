@@ -79,5 +79,6 @@ export const playlists: PlaylistEntry[] = [
   { year: 2023, month: 'September', title: 'September 2023', embedUrl: 'https://embed.music.apple.com/us/playlist/september-2023/pl.u-6m4a4F50ANZ' },
   { year: 2023, month: 'October', title: 'October 2023', embedUrl: 'https://embed.music.apple.com/us/playlist/october-2023/pl.u-Zmljlh4aYMz' },
   { year: 2023, month: 'November', title: 'November 2023', embedUrl: 'https://embed.music.apple.com/us/playlist/november-2023/pl.u-ZmDDJh4aYMz' },
+  { year: 2023, month: 'December', title: 'December 2023', embedUrl: 'https://embed.music.apple.com/us/playlist/december-2023/pl.u-Aka93fkXm97' },
   { year: 2024, month: 'January', title: 'January 2024', embedUrl: 'https://embed.music.apple.com/us/playlist/january-2024/pl.u-6mZeyF50ANZ' },
 ];
