@@ -5,12 +5,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/soundwave/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   test: {
     environment: 'jsdom',
     environmentOptions: {
-      jsdom: { url: 'http://localhost:3000/soundwave/' },
+      jsdom: { url: 'http://localhost:3000/' },
     },
     setupFiles: './src/setupTests.ts',
     globals: true,

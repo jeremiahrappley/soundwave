@@ -52,3 +52,8 @@ GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml))
 builds and deploys `dist/` to GitHub Pages on every push to `master`. In the repo
 settings, set **Settings → Pages → Source** to "GitHub Actions" once this workflow
 is pushed.
+
+Served at [soundwave.jrappley.com](https://soundwave.jrappley.com) via a custom
+domain — [`public/CNAME`](public/CNAME) is copied into every build so GitHub Pages
+keeps the domain across deploys. DNS is a `CNAME` record for `soundwave` pointing
+at `jeremiahrappley.github.io`, set in `jrappley.com`'s DNS provider.

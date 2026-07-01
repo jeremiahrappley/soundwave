@@ -5,7 +5,7 @@ import YearPage from './pages/YearPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/soundwave">
+    <BrowserRouter>
       <div className="min-h-screen text-fg">
         <NavBar />
         <Routes>
