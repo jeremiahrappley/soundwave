@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom';
-import Header from '../components/Header';
 import PlaylistEmbed from '../components/PlaylistEmbed';
 import Footer from '../components/Footer';
 import { playlists } from '../data/playlists';
@@ -13,13 +12,20 @@ function YearPage() {
 
   return (
     <div>
-      <Header title={year ?? ''} />
+      <div className="mx-auto max-w-5xl px-6 pt-10 pb-2">
+        <h1 className="text-3xl font-bold text-fg sm:text-4xl">{year}</h1>
+        <p className="mt-1 text-sm text-muted">
+          {yearPlaylists.length} playlist{yearPlaylists.length === 1 ? '' : 's'}
+        </p>
+      </div>
       {yearPlaylists.length === 0 ? (
-        <p className="mx-auto max-w-[1200px] px-6 py-10 text-center">No playlists found for {year}.</p>
+        <p className="mx-auto max-w-5xl px-6 py-10 text-center text-muted">No playlists found for {year}.</p>
       ) : (
-        yearPlaylists.map((playlist) => (
-          <PlaylistEmbed key={playlist.title} title={playlist.title} embedUrl={playlist.embedUrl} />
-        ))
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 py-8 md:grid-cols-2">
+          {yearPlaylists.map((playlist) => (
+            <PlaylistEmbed key={playlist.title} title={playlist.title} embedUrl={playlist.embedUrl} />
+          ))}
+        </div>
       )}
       <Footer />
     </div>

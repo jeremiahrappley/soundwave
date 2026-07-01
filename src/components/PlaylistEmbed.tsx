@@ -1,7 +1,7 @@
 function PlaylistEmbed({ title, embedUrl }: { title: string; embedUrl: string }) {
   return (
-    <div className="mx-auto mt-10 max-w-[1200px] px-6">
-      <h2 className="mb-2 text-fg">{title}</h2>
+    <div className="rounded-2xl border border-white/5 bg-surface p-4 shadow-sm transition hover:border-accent/30">
+      <h2 className="mb-3 text-base font-semibold text-fg">{title}</h2>
       <iframe
         title={title}
         src={embedUrl}
